@@ -1,0 +1,111 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+</style>
+<body class="w3-light-grey">
+
+<div class="w3-content" style="max-width:1400px">
+
+<header class="w3-container w3-center w3-padding-32"> 
+<h1><b>HEAVEN ON SWISS</b></h1>
+<p>Selamat datang di blognya Rifki</p>
+</header>
+
+	<div class = "w3-bar w3-dark-grey">
+	<button class = "w3-bar-item w3-button" onclick="window.location.href='da.html'">HOME</button>
+		<button class = "w3-bar-item w3-button" onclick="openProjek('Danau')">LAKE</button>
+			<button class = "w3-bar-item w3-button" onclick="openProjek('Gunung')">MOUNTAIN</button>
+				<button class = "w3-bar-item w3-button" onclick="openProjek('Profile')">PROFILE</button>
+					<button class = "w3-bar-item w3-button" onclick="openProjek('Air')">WATER FALL</button>
+						<button class = "w3-bar-item w3-button" onclick="openProjek('Lembah')">VALLEY</button>
+	</div>
+	
+<div class="w3-row">
+
+<div class="w3-col l8 s12">
+		<div id ="Danau" class="w3-card-4 w3-margin w3-white w3-animate-bottom projek">
+			<img src="swiss.jpg" style="width:100%">
+				<div class="w3-container">
+					<h3><b>Oeschinen Lake</b></h3>
+					<h5>Kandersteg , Bernese Oberland</h5>
+				</div>
+					<div class="w3-container">
+						<p align="justify">Wisata alam di Switzerland ini adalah Oeschinen Lake atau Danau Oeschinen. Danau yang berada di Bernese Oberland ini memiliki luas mencapai 111 hektar.
+						Oeschinen Lake ini memiliki pemandangan yang sangat luar biasa dengan pegunungan yang mengelilinginya serta airnya yang begitu jernih. Kamu bisa menikmatinya dengan cara menyusuri sekitar danau dengan berjalan kaki. Kawasan Danau Oeschinen ini juga dilengkapi dengan berbagai fasilitas yang tentu membuatmu semakin nyaman berada disini.
+						</p>
+					</div>
+		</div>
+		<hr>
+
+	<div id ="Gunung" class="w3-card-4 w3-margin w3-white w3-animate-left projek">
+		<img src="es.jpg" style="width:100%">
+			<div class="w3-container">
+				<h3><b>Jungfraujoch</b></h3>
+				<h5>Alpen Bernese , Berneses Oberland </h5>
+			</div>
+					<div class="w3-container">
+						<p align="justify">Jungfraujoch merupakan cekungan dataran salju abadi di Pegunungan Alpen yang diapit oleh dua puncak gunung, yaitu Puncak Jungfrau setinggi 4.158 meter diatas permukaan laut dan Moench setinggi 4.170 meter diatas permukaan laut.Jungfraujoch seringkali disebut sebagai puncak tertinggi di Eropa karena memiliki ketinggian mencapai 3.454 meter diatas permukaan laut. Untuk menuju kesana, kamu bisa menunggani kereta listrik bernama Jungfraubahn yang akan melintasi pegunungan Eiger dengan pemandangan yang sangat indah.
+						</p>
+					</div>
+	</div>
+</div>
+
+<div class="w3-col l4">
+	<div id ="Profile" class="w3-card w3-margin w3-margin-top w3-animate-top projek">
+		<img src="rifki.jpg" style="width:100%">
+			<div class="w3-container w3-white">
+				<h4><b>My Profile</b></h4>
+				<p>Nama saya Rifki Alfarizi</p>
+				<p>NIM saya 10123399.</p>
+				<p>Kelas saya IF10.</p>
+			</div>
+	</div>
+	<hr>
+	
+		<div id="Lembah" class="w3-card w3-margin w3-margin-top w3-animate-right projek">
+		<img src="vale.jpg" style="width:100%">
+			<div class="w3-container w3-white">
+				<h4><b>Valle Verzasca</b></h4>
+				<h6> Locarno district of the canton of Ticino</h6>
+				<p align="justify">
+				Valle Verzasca ini merupakan wisata alam lembah dengan pemandangan indah di kawasan Kanton Ticino. Valle Verzasca ini memiliki sungi yang sangat indah dengan air berwarna hijau yang sangat segar. Sungai ini dikelilingi oleh pemandangan alam hijau yang cantik dan tdur sehingga menjadikanya sebagai tempat berenang di alam liar terbaik di Switzerland.
+				</p>
+			</div>
+		</div>
+	<hr>
+		<div id="Air" class="w3-card w3-margin w3-margin-top w3-animate-zoom projek">
+				<img src="air.jpg" style="width:100%">
+					<div class="w3-container w3-white">
+					<h4><b>Rhine Fall</h4></b>
+					<h6> Laufen-Uhwiesen </h6>
+					<p align="justify">
+					Air terjun Rhine memiliki tinggi 23 meter dan lebar 150 meter. Untuk menyaksikannya dari dekat, pengunjung bisa naik ke dek yang bisa dijangkau dengan lift. Arus Rhine sangat deras sehingga menarik untuk diperhatikan dan suaranya membuat hati menjadi tenang. Apalagi air terjun ini dikelilingi oleh pemandangan alam yang menakjubkan dengan banyak pepohonan dan bukit.Valle Verzasca ini merupakan wisata alam lembah dengan pemandangan indah di kawasan Kanton Ticino.
+					</p>
+					</div>
+			</div>
+	<hr>
+</div>
+</div><br>
+</div>
+
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+</footer>
+
+<script>
+function openProjek(namaprojek) 
+{
+ var i;
+ var x = document.getElementsByClassName("projek");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namaprojek).style.display = "block";
+}
+</script>
+
+
+</body>
+</html>
+
+
